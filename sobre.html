@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre</title>
+    <style>
+        body {
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .layout {
+            display: flex;
+        }
+
+        .menu-lateral {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        figure img {
+            justify-self: flex-start;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        a {
+            color: white;
+        }
+
+        h3 {
+            align-self: center;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin: 4px 0;
+        }
+
+        .contato {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .informacoes {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 600px;
+            height: 250px;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 0 auto 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/Logo - Cine Pipoca.png" alt="Cine Pipoca" width="200px" height="200px">
+        <h3>Locadora de Vídeo - Cine Pipoca</h3>
+
+    </header>
+
+    <div class="layout">
+        <div class="menu-lateral">
+            <h3><a href="paginaPrincipal.html">Principal</a></h3>
+            <h3><a href="filmes.html">Filmes</a></h3>
+            <h3><a href="trailers.html">Trailers</a></h3>
+            <h3><a href="trilhaSonora.html">Trilha sonora</a></h3>
+            <h3><a href="contatos.html">Contatos</a></h3>
+            <h3><a href="sobre.html">Sobre</a></h3>
+        </div>
+        <main>
+
+            <h2>SOBRE</h2>
+
+            <section class="informacoes">
+                <div class="contato">
+                    <figure><img src="./img/idariana.jpeg" alt="Idariana de Cassia Basílio"></figure>
+                    <div>
+                        <p><strong>Nome: </strong>Idariana de Cassia Basílio</p>
+                        <p><strong>Telefone: </strong><a href="tel:+35997326102">(35) 99732-6102</a></p>
+                        <p><strong>E-mail: </strong><a
+                                href="mailto:idariana.basilio@alunos.ifsuldeminas.edu.br">idariana.basilio@alunos.ifsuldeminas.edu.br</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="informacoes">
+                <div class="contato">
+                    <figure><img src="./img/Julia.png" alt="Julia Oliveira"></figure>
+                    <div>
+                        <p><strong>Nome: </strong>Julia Oliveira</p>
+                        <p><strong>Telefone: </strong><a href="tel:+35991645308">(35) 99164-5308</a></p>
+                        <p><strong>E-mail: </strong><a
+                                href="mailto:julia2.oliveira@alunos.ifsuldeminas.edu.br">julia2.oliveira@alunos.ifsuldeminas.edu.br</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        © Idariana de Cassia Basílio e Julia Oliveira - Instituto Federal do Sul de Minas Gerais - 2025
+    </footer>
+
+</body>
+
+</html>

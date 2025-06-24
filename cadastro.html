@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <style>
+        body {
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .layout {
+            display: flex;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        a {
+            color: white;
+        }
+
+        h3 {
+            align-self: center;
+        }
+
+        legend {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .informacoes {
+            display: flex;
+            justify-content: center;
+        }
+
+        .descricao {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 450px;
+            height: 650px;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: start;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        input[type="reset"],
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 10px 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            border-radius: 8px;
+        }
+
+        input[type="password"] {
+            border-radius: 8px;
+        }
+
+        form {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        .botoes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .voltar {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/Logo - Cine Pipoca.png" alt="Cine Pipoca" width="200px" height="200px">
+        <h3>Locadora de Vídeo - Cine Pipoca</h3>
+    </header>
+
+    <div class="layout">
+        <main>
+            <section class="informacoes">
+                <div class="descricao">
+                    <form>
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome"><br><br>
+
+                        <label for="endereço">Endereço: </label>
+                        <input type="text" id="endereço"><br><br>
+
+                        <label for="e-mail">E-mail: </label>
+                        <input type="text" id="e-mail"><br><br>
+
+                        <label for="cidade">Cidade: </label>
+                        <input type="text" id="cidade"><br><br>
+
+
+                        <label for="estado">Estado: </label>
+                        <select id="estado">
+
+                            <option value="sp">São Paulo</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="ac">Acre</option>
+                            <option value="al">Alagoas</option>
+                            <option value="ap">Amapá</option>
+                            <option value="am">Amazonas</option>
+                            <option value="ba">Bahia</option>
+                            <option value="ce">Ceará</option>
+                            <option value="df">Distrto Federal</option>
+                            <option value="es">Espírito Santo</option>
+                            <option value="go">Goiás</option>
+                            <option value="ma">Maranhão</option>
+                            <option value="mt">Mato Grosso</option>
+                            <option value="ms">Mato Grosso do Sul</option>
+                            <option value="pa">Pará</option>
+                            <option value="pb">Paraíba</option>
+                            <option value="pr">Paraná</option>
+                            <option value="pe">Pernambuco</option>
+                            <option value="pi">Piauí</option>
+                            <option value="rn">Rio Grande do Norte</option>
+                            <option value="rs">Rio Grande do Sul</option>
+                            <option value="ro">Rôndonia</option>
+                            <option value="rr">Roraima</option>
+                            <option value="sc">Santa Catarina</option>
+                            <option value="se">Sergipe</option>
+                            <option value="to">Tocantins</option>
+
+                        </select>
+
+
+                        <br><br>
+                        <label>Sexo: </label><br>
+                        <input type="radio" id="masculino" name="sexo" value="masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="feminino" name="sexo" value="feminino">
+                        <label for="feminino">Feminino</label><br><br>
+
+
+                        <label>Escolha os gêneros que você mais gosta: </label><br>
+                        <input type="checkbox" id="ação" name="filme" value="ação">
+                        <label for="ação">Ação</label><br>
+
+                        <input type="checkbox" id="aventura" name="filme" value="aventura">
+                        <label for="aventura">Aventura</label><br>
+
+                        <input type="checkbox" id="romance" name="filme" value="romance">
+                        <label for="romance">Romance</label><br>
+
+                        <input type="checkbox" id="ficção" name="filme" value="ficção">
+                        <label for="ficção">Ficção</label><br><br>
+
+
+                        <label for="usuário">Usuário: </label>
+                        <input type="text" id="usuário" size="30" maxlength="20"><br><br>
+
+                        <label for="senha">Senha: </label>
+                        <input type="password" id="senha" name="senha"><br><br>
+
+                        <div class="botoes">
+                            <label for="limpar"></label>
+                            <input type="reset" id="Limpar" value="Limpar">
+
+                            <label for="cancelar"></label>
+                            <input type="reset" id="Cancelar" value="Cancelar">
+
+                            <label for="cadastrar"></label>
+                            <input type="submit" id="Cadastrar" value="Cadastrar">
+                        </div>
+
+                        <div class="voltar">
+                            <a href="index.html">Voltar</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        © Idariana de Cassia Basílio e Julia Oliveira - Instituto Federal do Sul de Minas Gerais - 2025
+    </footer>
+
+</body>
+
+</html>

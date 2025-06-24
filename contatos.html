@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contatos</title>
+    <style>
+        body {
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .layout {
+            display: flex;
+        }
+
+        .menu-lateral {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        a {
+            color: white;
+        }
+
+        h3 {
+            align-self: center;
+        }
+
+        legend {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .informacoes {
+            display: flex;
+            justify-content: center;
+        }
+
+        .descricao {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 450px;
+            height: 600px;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: start;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 10px 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 8px;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/Logo - Cine Pipoca.png" alt="Cine Pipoca" width="200px" height="200px">
+        <h3>Locadora de Vídeo - Cine Pipoca</h3>
+
+    </header>
+
+    <div class="layout">
+        <div class="menu-lateral">
+            <h3><a href="paginaPrincipal.html">Principal</a></h3>
+            <h3><a href="filmes.html">Filmes</a></h3>
+            <h3><a href="trailers.html">Trailers</a></h3>
+            <h3><a href="trilhaSonora.html">Trilha sonora</a></h3>
+            <h3><a href="contatos.html">Contatos</a></h3>
+            <h3><a href="sobre.html">Sobre</a></h3>
+        </div>
+        <main>
+            <section class="informacoes">
+                <div class="descricao">
+                    <form id="formulario">
+                        <legend>Contato</legend><br>
+
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome"><br>
+                        <br><br>
+
+
+                        <label for="endereco">E-mail:</label><br>
+                        <input type="email" id="email"><br>
+                        <br><br>
+
+
+                        <label for="cidade">Assunto:</label><br>
+                        <input type="text" id="assunto"><br>
+                        <br><br>
+
+
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" cols="50" rows="10"></textarea><br>
+                        <br><br>
+
+                        <input type="submit" value="Enviar e-mail">
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        © Idariana de Cassia Basílio e Julia Oliveira - Instituto Federal do Sul de Minas Gerais - 2025
+    </footer>
+
+</body>
+
+</html>

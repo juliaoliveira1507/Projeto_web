@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes de Ação</title>
+    <style>
+        body {
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .layout {
+            display: flex;
+        }
+
+        .menu-lateral {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .generos {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 20px;
+        }
+
+        figure {
+            width: 150px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        figure img {
+            width: 150px;
+            height: 200px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            height: 15%;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/Logo - Cine Pipoca.png" alt="Cine Pipoca" width="200px" height="200px">
+        <h2>Locadora de Vídeo - Cine Pipoca</h2>
+
+    </header>
+
+    <div class="layout">
+        <div class="menu-lateral">
+            <h3><a href="paginaPrincipal.html">Principal</a></h3>
+            <h3><a href="filmes.html">Filmes</a></h3>
+            <h3><a href="trailers.html">Trailers</a></h3>
+            <h3><a href="trilhaSonora.html">Trilha sonora</a></h3>
+            <h3><a href="contatos.html">Contatos</a></h3>
+            <h3><a href="sobre.html">Sobre</a></h3>
+        </div>
+
+        <main>
+            <div class="generos"><a href="filmesAcao.html">Ação</a> | <a href="filmesAventura.html">Aventura</a> | <a
+                    href="filmesRomance.html">Romance</a> | <a href="filmesFiccao.html">Ficção Científica</a></div>
+            <section class="galeria">
+                <figure><a href="avatar2.html"><img src="./img/Avatar - Caminho das Águas.jpg" alt="Avatar 2"></a>
+                    <figcaption>Avatar - Caminho das Águas</figcaption>
+                </figure>
+                <figure><a href="avatar.html"><img src="./img/Avatar.jpg" alt="Avatar"></a>
+                    <figcaption>Avatar</figcaption>
+                </figure>
+                <figure><a href="homemAranha.html"><img src="./img/Homem Aranha - Sem Volta para Casa.webp"
+                            alt="Homem Aranha"></a>
+                    <figcaption>Homem Aranha - Sem Volta para Casa</figcaption>
+                </figure>
+                <figure><a href="jurassic.html"><img src="./img/Jurassic World.webp" alt="Jurassic World"></a>
+                    <figcaption>Jurassic World</figcaption>
+                </figure>
+                <figure><a href="vingadores.html"><img src="./img/Os Vingadores.jpg" alt="Os Vingadores"></a>
+                    <figcaption>Os Vingadores</figcaption>
+                </figure>
+                <figure><a href="starWars.html"><img src="./img/Star Wars - O Despertar da Força.jpg"
+                            alt="Star Wars"></a>
+                    <figcaption>Star Wars - O Despertar da Força</figcaption>
+                </figure>
+                <figure><a href="guerraInfinita.html"><img src="./img/Vingadores - Guerra Infinita.jpg"
+                            alt="Vingadores Guerra Infinita"></a>
+                    <figcaption>Vingadores - Guerra Infinita</figcaption>
+                </figure>
+                <figure><a href="vingadoresUltimato.html"><img src="./img/Vingadores - Ultimato.jpg"
+                            alt="Vingadores Ultimato"></a>
+                    <figcaption>Vingadores - Ultimato</figcaption>
+                </figure>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        © Idariana de Cassia Basílio e Julia Oliveira - Instituto Federal do Sul de Minas Gerais - 2025
+    </footer>
+
+</body>
+
+</html>

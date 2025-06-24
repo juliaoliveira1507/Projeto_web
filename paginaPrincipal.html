@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        .layout {
+            display: flex;
+        }
+
+        .menu-lateral {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .login {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: white;
+        }
+
+        li,
+        p,
+        h2,
+        h3 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/Logo - Cine Pipoca.png" alt="Cine Pipoca" width="200px" height="200px">
+        <h2>Locadora de Vídeo - Cine Pipoca</h2>
+    </header>
+
+    <div class="layout">
+        <div class="menu-lateral">
+            <h3><a href="paginaPrincipal.html">Principal</a></h3>
+            <h3><a href="filmes.html">Filmes</a></h3>
+            <h3><a href="trailers.html">Trailers</a></h3>
+            <h3><a href="trilhaSonora.html">Trilha sonora</a></h3>
+            <h3><a href="contatos.html">Contatos</a></h3>
+            <h3><a href="sobre.html">Sobre</a></h3>
+        </div>
+
+        <main>
+            <div class="login">
+                <a href="index.html">Login</a>
+            </div>
+
+            <div class="secao">
+                <h1>Seja Bem-vindo à Cine Pipoca </h1>
+                <h2>Horário de Funcionamento e Endereço</h2>
+                <ul>
+                    <li>Segunda a Sábado: 9:00 - 18:00</li>
+                    <li>Sábado: 9:00 - 12:00</li>
+                    <li>Domingo e Feriado: Fechado</li>
+                    <li>Endereço: Serra de Bragança - 300, Bairro: Vila Gomes Cardim, São Paulo - SP</li>
+                </ul>
+            </div>
+
+            <div class="secao">
+                <h3>Sobre nossa trajetória</h3>
+                <p>Cine Pipoca é uma locadora de vídeo online onde você pode alugar ou comprar filmes e séries pela
+                    internet, sem mensalidade. Com um catálogo variado, incluindo lançamentos, clássicos e produções
+                    premiadas, a plataforma permite assistir em qualquer dispositivo, com qualidade HD e total
+                    praticidade. É a experiência das antigas locadoras, agora 100% digital.</p>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        © Idariana de Cassia Basílio e Julia Oliveira - Instituto Federal do Sul de Minas Gerais - 2025
+    </footer>
+
+</body>
+
+</html>

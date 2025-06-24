@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px;
+        }
+
+        body {
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .layout {
+            display: flex;
+        }
+
+        a {
+            color: white;
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 350px;
+            height: 150px;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: start;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .cadastro {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+
+
+        input[type="text"],
+        input[type="password"] {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        input[type="button"] {
+            border-radius: 8px;
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/Logo - Cine Pipoca.png" alt="Cine Pipoca" width="200px" height="200px">
+        <h3>Locadora de Vídeo - Cine Pipoca</h3>
+    </header>
+
+    <div class="layout">
+        <div class="login">
+            <form>
+                <label for="usuário"><strong>Usuário: </strong></label>
+                <input type="text" id="usuário" name="usuário"><br><br>
+
+                <label for="senha"><strong>Senha: </strong></label>
+                <input type="password" id="senha" name="senha"><br><br>
+
+                <div>
+                    <label for="entrar"></label>
+                    <input type="button" value="Entrar"><br><br>
+                </div>
+
+                <div class="cadastro">
+
+                    <a href="paginaPrincipal.html">Entrar</a>
+
+                    <a href="cadastro.html">Cadastro</a>
+                </div>
+
+        </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
